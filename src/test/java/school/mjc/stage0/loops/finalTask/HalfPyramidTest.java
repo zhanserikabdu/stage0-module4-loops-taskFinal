@@ -7,17 +7,17 @@ class HalfPyramidTest extends BaseIOTest {
 
     @Test
     void printHalfPyramidEven() {
-        String expected = "********\n" +
-                " *******\n" +
-                "  ******\n" +
-                "   *****\n" +
-                "    ****\n" +
-                "     ***\n" +
-                "      **\n" +
-                "       *\n";
+        String expected =
+                    "       *\n" +
+                    "      **\n" +
+                    "     ***\n" +
+                    "    ****\n" +
+                    "   *****\n" +
+                    "  ******\n" +
+                    " *******\n" +
+                    "********\n";
 
-        HalfPyramid halfPyramid = new HalfPyramid();
-
+                HalfPyramid halfPyramid = new HalfPyramid();
         halfPyramid.printHalfPyramid(8);
 
         assertOutEquals(expected);
@@ -25,13 +25,14 @@ class HalfPyramidTest extends BaseIOTest {
 
     @Test
     void printHalfPyramidOdd() {
-        String expected = "*******\n" +
-                " ******\n" +
-                "  *****\n" +
-                "   ****\n" +
-                "    ***\n" +
-                "     **\n" +
-                "      *\n";
+        String expected =
+                    "      *\n" +
+                    "     **\n" +
+                    "    ***\n" +
+                    "   ****\n" +
+                    "  *****\n" +
+                    " ******\n" +
+                    "*******\n";
 
         HalfPyramid halfPyramid = new HalfPyramid();
 
