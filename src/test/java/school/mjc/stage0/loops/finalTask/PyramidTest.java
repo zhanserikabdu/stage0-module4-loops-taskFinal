@@ -7,15 +7,17 @@ class PyramidTest extends BaseIOTest {
 
     @Test
     void printHalfPyramidPrintNineFloor() {
-        String expected = "        1        \n" +
-                "       212       \n" +
-                "      32123      \n" +
-                "     4321234     \n" +
-                "    543212345    \n" +
-                "   65432123456   \n" +
-                "  7654321234567  \n" +
-                " 876543212345678 \n" +
-                "98765432123456789\n";
+        String expected = """
+                    1
+                   212
+                  32123
+                 4321234
+                543212345
+               65432123456
+              7654321234567
+             876543212345678
+            98765432123456789
+            """;
 
         Pyramid pyramid = new Pyramid();
 
@@ -26,13 +28,14 @@ class PyramidTest extends BaseIOTest {
 
     @Test
     void printHalfPyramidPrintSixFloor() {
-        String expected =
-                "     1     \n" +
-                "    212    \n" +
-                "   32123   \n" +
-                "  4321234  \n" +
-                " 543212345 \n" +
-                "65432123456\n" ;
+        String expected = """
+                 1
+                212
+               32123
+              4321234
+             543212345
+            65432123456
+            """;
 
         Pyramid pyramid = new Pyramid();
 
@@ -40,6 +43,7 @@ class PyramidTest extends BaseIOTest {
 
         assertOutEquals(expected);
     }
+
     @Test
     void printHalfPyramidPrintZeroFloor() {
         String expected = "" ;
